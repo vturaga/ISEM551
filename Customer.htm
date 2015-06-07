@@ -1,0 +1,64 @@
+<html>
+
+<head>
+ 
+ <title>Customer Information</title>
+
+<style>
+
+body {
+    background-color:#909090;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+</style>
+
+<script type="text/javascript" language="javascript">
+  
+  function check(){
+
+    var x;
+
+    x=document.getElementById("CustomerName").value;
+
+    if(x=='')
+     {
+      alert('Please Enter Customer Name');
+     }  
+  }
+  </script> 
+</head>
+
+  <body>
+  <div align="center">
+   <H1> Customer Information</H1> 
+
+  <form method='post'>
+      <Table>
+       <tr>
+        <td>Customer Name: &nbsp;&nbsp;&nbsp;&nbsp;<input type='text' name='CustomerName' id='CustomerName' /></td>
+       </tr>
+     <tr>
+        <td>Customer Address: <input type='text' name='CustomerAddress' id='CustomerAddress' /></td>
+       </tr>
+
+      </Table>
+
+      <br /><br /><br />
+
+   <input type='button' value='Submit' onclick="check()"/>  
+     </form>
+</div>
+</body>
+</html>
+
+
+
